@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/image-gallery
+# catalog-date 2008-08-19 23:32:24 +0200
+# catalog-license lppl
+# catalog-version v1.0j
 Name:		texlive-image-gallery
 Version:	v1.0j
 Release:	1
@@ -64,6 +70,7 @@ shows the usage.
 %doc %{_texmfdistdir}/doc/latex/image-gallery/pic020.jpg
 %doc %{_texmfdistdir}/doc/latex/image-gallery/pic021.jpg
 %doc %{_texmfdistdir}/doc/latex/image-gallery/pic022.jpg
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -74,3 +81,5 @@ shows the usage.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
