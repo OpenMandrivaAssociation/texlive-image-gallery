@@ -1,12 +1,6 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/image-gallery
-# catalog-date 2008-08-19 23:32:24 +0200
-# catalog-license lppl
-# catalog-version v1.0j
 Name:		texlive-image-gallery
-Version:	v1.0j
-Release:	10
+Version:	1.0j
+Release:	1
 Summary:	Create an overview of pictures from a digital camera or from other sources
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/image-gallery
@@ -71,17 +65,3 @@ shows the usage.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> v1.0j-2
-+ Revision: 752731
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v1.0j-1
-+ Revision: 718709
-- texlive-image-gallery
-- texlive-image-gallery
-- texlive-image-gallery
-- texlive-image-gallery
-
