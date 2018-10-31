@@ -1,6 +1,6 @@
 Name:		texlive-image-gallery
 Version:	1.0j
-Release:	1
+Release:	2
 Summary:	Create an overview of pictures from a digital camera or from other sources
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/image-gallery
