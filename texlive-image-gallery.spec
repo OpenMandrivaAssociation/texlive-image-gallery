@@ -1,12 +1,12 @@
 Name:		texlive-image-gallery
-Version:	1.0j
-Release:	2
+Version:	15878
+Release:	1
 Summary:	Create an overview of pictures from a digital camera or from other sources
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/image-gallery
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ the size of the pictures and all the margins. The example file
 shows the usage.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -58,7 +58,7 @@ shows the usage.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
