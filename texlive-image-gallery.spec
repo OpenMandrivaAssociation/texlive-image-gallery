@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Create an overview of pictures from a digital camera or from other sources
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/image-gallery
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/image-gallery
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/image-gallery.doc.r%{version}.tar.xz
